@@ -1,0 +1,155 @@
+.menu {
+  color: #ffffff;
+  font-family: "Garamond", "Times New Roman", serif;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  height: 90%;
+  margin: 5rem auto;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+ 
+.menu h1 {
+  font-size: 7rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 3;
+}
+ 
+.menu h2 {
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+ 
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.material-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+ 
+.plastic-menu-button {
+  width: 300px;
+  height: 80px;
+  border-radius: 30px;
+  border: none;
+  background-color: #000080;
+  color: #ffffff;
+  box-shadow: 0px 10px 10px #6F8FAF inset,
+              0px 5px 10px rgba(5, 5, 5, 0.212),
+              0px -10px 10px #6F8FAF inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: 60px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+ 
+ 
+.metal-menu-button {
+  width: 300px;
+  height: 80px;
+  border-radius: 30px;
+  border: none;
+  background-color: #4b5053;
+  color: #ffffff;
+  box-shadow: 0px 10px 10px #71797E inset,
+              0px 5px 10px rgba(5, 5, 5, 0.212),
+              0px -10px 10px #71797E inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: 60px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+ 
+.paper-menu-button {
+  width: 300px;
+  height: 80px;
+  border-radius: 30px;
+  border: none;
+  background-color: #CC5500;
+  color: #ffffff;
+  box-shadow: 0px 10px 10px #ff720e inset,
+              0px 5px 10px rgba(5, 5, 5, 0.212),
+              0px -10px 10px #ff720e inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: 60px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+ 
+.logout-menu-button {
+  width: 300px;
+  height: 80px;
+  border-radius: 30px;
+  border: none;
+  background-color: #17d117;
+  color: #ffffff;
+  box-shadow: 0px 10px 10px #098d09 inset,
+              0px 5px 10px rgba(5, 5, 5, 0.212),
+              0px -10px 10px #098d09 inset;
+  cursor: pointer;
+  display: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: -20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+ 
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+ 
+.plastic-menu-button:hover,
+.metal-menu-button:hover,
+.paper-menu-button:hover,
+.logout-menu-button:hover {
+  animation: jello-horizontal 0.9s both;
+}
+ 
+.footer {
+  margin-top: 40px;
+}
+ 
+.footer p {
+  font-size: 5rem;
+}
+ 
+.menu a {
+  text-decoration: none;
+}

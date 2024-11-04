@@ -1,0 +1,149 @@
+.metal-dashboard {
+    background-color: #c4c4c4; 
+    color: #000000;
+    font-family: "Garamond", "Times New Roman", serif;
+    padding: 2rem;
+    padding-top: 6rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    height: 90%;
+    margin: 5rem auto;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .metal-recording {
+    background-color: #ffffff; /* White background for components */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the component */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin-bottom: 20px; /* Space between components */
+    color: #ffffff;
+  }
+  .metal-recording h2 {
+    color: #000000;
+    font-size: 3em;
+  }
+  
+  .metal-recording p {
+    font-size: 2em;
+    color: #000000; 
+  }
+  
+  
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+ }
+ 
+ .metal-recording-controls button {
+  width: 300px;
+  height: 130px;
+  border-radius: 30px;
+  border: none;
+  background-color: #4b5053;
+  color: #ffffff;
+  box-shadow: 0px 10px 10px #71797E inset,
+  0px 5px 10px rgba(5, 5, 5, 0.212),
+  0px -10px 10px #71797E inset;
+  cursor: pointer;
+  display: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  margin: 60px;
+  font-family: "Lucida Console", "Courier New", monospace;
+ }
+ 
+ .metal-recording-controls button:hover {
+ 
+  color: #ffffff;
+  animation: jello-horizontal 0.9s both;
+ }
+  
+  .bar-chart {
+    background-color: #ffffff; /* White background for components */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the component */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin-bottom: 20px; /* Space between components */
+  }
+  
+  .bar-chart h2 {
+    font-size: 2.5em;
+    color: #000000;
+  }
+  
+  .metal-fact{
+    background-color: #4b5053;
+    border-radius: 160px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-color: #ffffff;
+    border-width: 3px;
+  }
+  
+  .metal-fact p {
+    font-size: 2em;
+    color: #ffffff; 
+  }
+  
+  .metal-fact h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+  }
+  
+  .metal-dashboard h1 {
+    font-size: 4em;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: 0;
+    color: #fff;
+    padding-bottom: 6rem;
+  }
+  
+
+  .metal-nav button {
+    width: 300px;
+    height: 130px;
+    border-radius: 30px;
+    border: none;
+    background-color: #17d117;
+    color: #ffffff;
+    box-shadow: 0px 10px 10px #098d09 inset,
+                0px 5px 10px rgba(5, 5, 5, 0.212),
+                0px -10px 10px #098d09 inset;
+    cursor: pointer;
+    display: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 60px;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .metal-nav button:hover {
+   
+    color: #ffffff;
+    animation: jello-horizontal 0.9s both;
+   }

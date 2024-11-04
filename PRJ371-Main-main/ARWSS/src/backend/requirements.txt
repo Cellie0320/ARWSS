@@ -1,0 +1,13 @@
+Flask==3.0.0        # Core framework
+Flask-CORS==5.0.0   # Handles Cross-Origin Resource Sharing (CORS)
+pymongo==4.7.0      # MongoDB driver for Python
+gunicorn==21.2.0    # WSGI server for running Flask apps
+requests==2.31.0    # HTTP requests library
+flask-pymongo==2.3.0 # Flask extension to interact with MongoDB
+python-dotenv==1.0.0 # Load environment variables from .env
+pytest==7.4.2       # Testing framework
+
+# Optional dependencies
+Flask-Testing==0.8.1 # Testing Flask apps (Optional)
+pytest-cov==4.1.0    # Code coverage with pytest (Optional)
+sqlite3  # SQLite database support (comes pre-installed with Python)

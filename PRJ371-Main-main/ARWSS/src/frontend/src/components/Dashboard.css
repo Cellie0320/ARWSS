@@ -1,0 +1,175 @@
+/* src/components/Dashboard.css */
+.line-chart-container {
+  margin: 20px 0;
+}
+
+.line-chart-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.livestream-controls button {
+  background-color: #ff1111; 
+  border: none;
+  color: #ffff; 
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 40px;
+  margin: 10px; 
+  transition: background-color 0.3s ease;
+}
+
+.livestream-controls button:hover {
+  background-color: #2b27ff; 
+  color: #ffffff;
+}
+
+.dashboard {
+  background-color: #0fa70f; 
+  ;
+  color: #000000;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 1000px;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.livestream{
+  background-color: #2b27ff; /* White background for components */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the component */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-bottom: 20px; /* Space between components */
+  color: #ffffff;
+}
+.livestream h2 {
+  display: block;
+  font-size: 2.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  color: #ffffff;
+}
+
+.livestream p {
+  font-size: 1.75em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #ffffff; 
+ 
+}
+
+.livestream-controls button {
+  background-color: #ff1111; 
+  border: none;
+  color: #ffff; 
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 40px;
+  margin: 10px; 
+  transition: background-color 0.3s ease;
+}
+
+.livestream-controls button:hover {
+  background-color: #2b27ff; 
+  color: #ffffff;
+}
+
+.bar-chart{
+  background-color: #ffffff; /* White background for components */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the component */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-bottom: 20px; /* Space between components */
+}
+
+.bar-chart h2 {
+  display: block;
+  font-size: 2.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  color: #000000;
+}
+
+.fun-fact {
+  background-color: #2b27ff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  
+}
+
+.fun-fact p {
+  font-size: 1.75em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #ffffff; 
+ 
+}
+
+.fun-fact h2 {
+  display: block;
+  font-size: 2.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  color: #ffffff;
+}
+
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Collapse borders */
+}
+
+th, td {
+  border: 1px solid #dddddd; /* Table border */
+  text-align: left; /* Align text to the left */
+  padding: 8px; /* Padding inside table cells */
+}
+
+.navigation button {
+  background-color: #ff1111; /* Button background color */
+  border: none;
+  color: #ffffff; /* Button text color */
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 50px;
+  margin: 10px; /* Space around buttons */
+  transition: background-color 0.3s ease;
+}
+
+.navigation button:hover {
+  background-color: #0fa70f; /* Button hover color */
+  color: #ffffff;
+}
+
+
+.dashboard h1 {
+  font-size: 3.5rem;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  margin: 0;
+  color: #fff;
+}
+

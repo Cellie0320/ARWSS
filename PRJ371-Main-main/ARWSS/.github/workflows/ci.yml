@@ -1,0 +1,141 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        language: [python, javascript]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    # Backend setup and linting
+    - name: Set up Python
+      if: matrix.language == 'python'
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install backend dependencies if not installed
+      if: matrix.language == 'python'
+      run: |
+        python -m pip install --upgrade pip
+        if [ -s requirements.txt ]; then
+            pip install -r requirements.txt
+        else
+            pip install flake8 pytest
+        fi
+
+    - name: Run backend tests
+      if: matrix.language == 'python'
+      run: |
+        pytest
+
+    - name: Run flake8
+      if: matrix.language == 'python'
+      run: |
+        flake8 .
+
+    # Frontend setup and linting
+    - name: Set up Node.js
+      if: matrix.language == 'javascript'
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install frontend dependencies if not installed
+      if: matrix.language == 'javascript'
+      run: |
+        cd src/frontend/robotic-arm-dashboard
+        if [ ! -d "node_modules" ]; then
+            npm install
+        fi
+
+    - name: Run frontend tests
+      if: matrix.language == 'javascript'
+      run: |
+        cd src/frontend/robotic-arm-dashboard
+        npm test
+
+    - name: Install ESLint and React plugin if not installed
+      if: matrix.language == 'javascript'
+      run: |
+        cd src/frontend/robotic-arm-dashboard
+        if ! npx eslint -v &> /dev/null; then
+            npm install eslint eslint-plugin-react
+        fi
+
+    - name: Run ESLint
+      if: matrix.language == 'javascript'
+      run: |
+        cd src/frontend/robotic-arm-dashboard
+        npx eslint .
+
+    # Integration tests (commented out for now)
+    # - name: Start backend server
+    #   if: matrix.language == 'python'
+    #   run: |
+    #     python app.py &
+    #   env:
+    #     FLASK_ENV: development
+
+    # - name: Run integration tests
+    #   if: matrix.language == 'javascript'
+    #   run: |
+    #     cd frontend
+    #     npm run integration-test
+
+    # Post results as a comment on the pull request or commit
+    - name: Post results
+      uses: actions/github-script@v4
+      with:
+        script: |
+          const { execSync } = require('child_process');
+          const lintResults = execSync('npx eslint . || true').toString();
+          const testResults = execSync('npm test || true').toString();
+          const flake8Results = execSync('flake8 . || true').toString();
+          const pytestResults = execSync('pytest || true').toString();
+
+          const comment = `
+          ## Lint Results
+          \`\`\`
+          ${lintResults}
+          \`\`\`
+
+          ## Test Results
+          \`\`\`
+          ${testResults}
+          \`\`\`
+
+          ## flake8 Results
+          \`\`\`
+          ${flake8Results}
+          \`\`\`
+
+          ## Pytest Results
+          \`\`\`
+          ${pytestResults}
+          \`\`\`
+          `;
+
+          if (github.context.eventName === 'pull_request') {
+            github.rest.issues.createComment({
+              issue_number: github.context.issue.number,
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
+              body: comment
+            });
+          } else if (github.context.eventName === 'push') {
+            const commitSha = github.context.sha;
+            github.rest.repos.createCommitComment({
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
+              commit_sha: commitSha,
+              body: comment
+            });
+          }
