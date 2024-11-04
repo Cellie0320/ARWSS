@@ -198,8 +198,3 @@ fetch('http://127.0.0.1:5000/history', {
 
 ## Contact
 For any questions or issues, please contact the development team.
-
----
-
-This standalone `api_documentation.md` file provides a comprehensive guide to the available endpoints, request formats, expected responses, and how the API interacts with the frontend of the ARWSS.
-```
