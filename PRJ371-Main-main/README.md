@@ -90,4 +90,4 @@ In the CoppeliaSim, press the start button to activate the simulation environmen
 
 ### 5.6 Additional Configuration
 - Adjust system parameters in `config.lua` as needed.
-- Refer to the [user manual](docs/user_manual/user_manual.md) for detailed operating instructions.
+- Refer to the [user manual](ARWSS/docs/user_manual/user_manual.md) for detailed operating instructions.
