@@ -95,8 +95,11 @@ This user manual provides step-by-step instructions on how to install, configure
 
 ### 4.3 Start the backend tp activate flask 
 1. Open a terminal or command prompt.
-2. Navigate to the `src/backend`
-3. Start the Flask server:
+2. Navigate to the `src/backend` directory:
+ ```sh
+cd src/backend
+```
+4. Start the Flask server:
     ```sh
     python main.py
     ```
