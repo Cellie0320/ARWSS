@@ -93,9 +93,9 @@ This user manual provides step-by-step instructions on how to install, configure
     npm start
     ```
 
-### 4.3 Activate Flask
+### 4.3 Start the backend tp activate flask 
 1. Open a terminal or command prompt.
-2. Navigate to the project directory.
+2. Navigate to the `src/backend`
 3. Start the Flask server:
     ```sh
     python main.py
