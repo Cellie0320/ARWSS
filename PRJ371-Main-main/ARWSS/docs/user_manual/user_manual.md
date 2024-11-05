@@ -99,7 +99,7 @@ This user manual provides step-by-step instructions on how to install, configure
  ```sh
 cd src/backend
 ```
-4. Start the Flask server:
+ 3. Start the Flask server:
     ```sh
     python main.py
     ```
