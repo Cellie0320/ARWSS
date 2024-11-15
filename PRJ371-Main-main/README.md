@@ -1,6 +1,4 @@
-Sure, here is the updated README file with the logo added at the top:
-
-# ![ARWSS Logo](#file:ARWSS_Logo_1-removebg-preview (1).png-context)
+# ![ARWSS Logo](ARWSS_Logo_1-removebg-preview%20(1).png)
 
 ## Table of Contents
 1. [Activate the Environment](#1-activate-the-environment)
