@@ -1,22 +1,27 @@
-.login {
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
   background: url('../../Images/brightStream.webp') no-repeat center center;
   background-size: cover;
+}
+
+.login {
+  background-color: rgba(111, 214, 111, 0.7); /* Overlay bright green */
   color: #000000;
   font-family: 'Arial', sans-serif;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  width: 450px;
-  height: 300px;
-  margin: 5rem auto;
+  width: 800px;
   text-align: center;
-  background-color: rgba(111, 214, 111, 0.7); /* Overlay bright green */
-  padding-top: 180px;
 }
+
 .login-heading {
   font-size: 2.5rem;
   color: #000000;
-  margin-bottom: -3.5rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -84,3 +89,15 @@
   }
 }
 
+.arwss-logo {
+  width: 100px; /* Adjust the size as needed */
+  margin-bottom: 20px; /* Adjust the spacing as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.arwss-logo:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}

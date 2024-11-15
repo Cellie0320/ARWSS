@@ -1,214 +1,181 @@
 /* src/components/Dashboard.css */
 
 .paper-dashboard {
-    background-color: #ffbe4e; 
-    color: #000000;
-    font-family: "Garamond", "Times New Roman", serif;
-    padding: 2rem;
-    padding-top: 6rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 90%;
-    height: 90%;
-    margin: 5rem auto;
-    text-align: center;
-    font-size: 20px;
-  }
-  
-  .paper-recording{
-    background-color: #ffffff; /* White background for components */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Padding inside the component */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    margin-bottom: 20px; /* Space between components */
-    color: #ffffff;
-  }
-  .paper-recording h2 {
-    display: block;
-    font-size: 2.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    color: #000000;
-  }
-  
-  .paper-recording p {
-    font-size: 1.75em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: #000000; 
-   
-  }
-  
-  @keyframes jello-horizontal {
-    0% {
-      transform: scale3d(1, 1, 1);
-    }
-    30% {
-      transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-      transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-      transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-      transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-      transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-      transform: scale3d(1, 1, 1);
-    }
-   }
-   
-   .paper-recording-controls button {
-    width: 300px;
-    height: 130px;
-    border-radius: 30px;
-    border: none;
-    background-color: #CC5500;
-    color: #ffffff;
-    box-shadow: 0px 10px 10px #ff720e inset,
-                0px 5px 10px rgba(5, 5, 5, 0.212),
-                0px -10px 10px #ff720e inset;
-    cursor: pointer;
-    display: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    margin: 60px;
-    font-family: "Lucida Console", "Courier New", monospace;
-   }
-   
-   .paper-recording-controls button:hover {
-   
-    color: #ffffff;
-    animation: jello-horizontal 0.9s both;
-   }
-  
-  .bar-chart{
-    background-color: #ffffff; /* White background for components */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Padding inside the component */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    margin-bottom: 20px; /* Space between components */
-  }
-  
-  .bar-chart h2 {
-    display: block;
-    font-size: 2.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    color: #000000;
-  }
-  
-  .paper-fact {
-    background-color: #CC5500;
-    border-radius: 160px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    border-color: #ffffff;
-    border-width: 3px;
+  background-color: #ffbe4e; 
+  color: #000000;
+  font-family: "Garamond", "Times New Roman", serif;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  height: 250vh; /* Adjust height to fit within the viewport */
+  margin: 5vh auto; /* Adjust margin to fit within the viewport */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    
-  }
-  
-  .paper-fact p {
-    font-size: 2em;
-    color: #ffffff; 
-   
-  }
-  
-  .paper-fact h2 {
-    font-size: 2.5em;
-    color: #ffffff;
-  }
-  
-  table {
-    width: 100%; /* Full width */
-    border-collapse: collapse; /* Collapse borders */
-  }
-  
-  th, td {
-    border: 1px solid #dddddd; /* Table border */
-    text-align: left; /* Align text to the left */
-    padding: 8px; /* Padding inside table cells */
-  }
-  
-  .navigation button {
-    --bg: #FF2400;
-    --text-color: #ffffff;
-    position: relative;
-    width: 400px;
-    height: 90px;
-    border: none;
-    background: var(--bg);
-    color: var(--text-color);
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-weight: bold;
-    font-size: 2em;
-    text-transform: uppercase;
-    transition: 0.2s;
-    border-radius: 5px;
-    opacity: 1;
-    letter-spacing: 1px;
-    box-shadow: #880808 0px 7px 2px, #000 0px 8px 5px;
-    margin-top: 47px;
-  }
-  
-  .navigation button:hover {
-    background-color: #FF2400; /* Button hover color */
-    color: #ffffff;
-  }
-  
-  .navigation button:active {
-    top: 4px;
-    box-shadow: #0a6d0a 0px 3px 2px, #000 0px 3px 5px;
-  }
-  
-  .paper-dashboard h1 {
-    font-size: 3.5rem;
-    font-family: "Lucida Console", "Courier New", monospace;
-    margin: 0;
-    color: #fff;
-    padding-bottom: 6rem;
-  }
-  
+.paper-dashboard h1 {
+  font-size: 2em;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 0;
+  color: #fff;
+  padding-bottom: 1rem;
+  overflow: hidden; /* Ensures the text is hidden until the animation completes */
+  white-space: nowrap; /* Prevents the text from wrapping */
+  animation: typing 3.5s steps(40, end);
+}
 
-  .paper-nav button {
-    width: 300px;
-    height: 130px;
-    border-radius: 30px;
-    border: none;
-    background-color: #17d117;
-    color: #ffffff;
-    box-shadow: 0px 10px 10px #098d09 inset,
-                0px 5px 10px rgba(5, 5, 5, 0.212),
-                0px -10px 10px #098d09 inset;
-    cursor: pointer;
-    display: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    margin: 60px;
-    font-family: "Lucida Console", "Courier New", monospace;
+.paper-recording {
+  background-color: #ffffff; /* White background for components */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the component */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-bottom: 20px; /* Space between components */
+  color: #000000;
+  width: 100%;
+}
+
+.paper-recording h2 {
+  color: #000000;
+  font-size: 3em;
+}
+
+.paper-recording p {
+  font-size: 2em;
+  color: #000000; 
+}
+
+.paper-recording-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.paper-recording-controls button {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #CC5500;
+  color: #ffffff;
+  box-shadow: 0px 10px 10px #ff720e inset,
+              0px 5px 10px rgba(5, 5, 5, 0.212),
+              0px -10px 10px #ff720e inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.paper-recording-controls button:hover {
+  color: #ffffff;
+  animation: jello-horizontal 0.9s both;
+}
+
+.bar-chart {
+  background-color: #ffffff; /* White background for components */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the component */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin-bottom: 20px; /* Space between components */
+  width: 100%;
+}
+
+.bar-chart h2 {
+  display: block;
+  font-size: 2.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  color: #000000;
+}
+
+.paper-fact {
+  background-color: #CC5500;
+  border-radius: 160px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-color: #ffffff;
+  border-width: 3px;
+  width: 100%;
+}
+
+.paper-fact p {
+  font-size: 2em;
+  color: #ffffff; 
+}
+
+.paper-fact h2 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+.paper-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.paper-nav button {
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: #CC5500;
+  color: #ffffff;
+  box-shadow: 0px 10px 10px #ff720e inset,
+              0px 5px 10px #ffffff,
+              0px -10px 10px #ff720e inset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 20px;
+}
+
+.paper-nav button:hover {
+  color: #ffffff;
+  animation: jello-horizontal 0.9s both;
+}
+.paper-nav a {
+  text-decoration: none;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
   }
-  
-  .paper-nav button:hover {
-   
-    color: #ffffff;
-    animation: jello-horizontal 0.9s both;
-   }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}

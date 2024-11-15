@@ -17,17 +17,17 @@ const BarChart = ({ data }) => {
       {
         label: 'Plastics',
         data: sortedData.map(item => item.plastic),
-        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+        backgroundColor: 'rgba(0, 0, 128, 1)',
       },
       {
         label: 'Paper',
         data: sortedData.map(item => item.paper),
-        backgroundColor: 'rgba(153, 102, 255, 0.6)',
+        backgroundColor: 'rgba(204, 85, 0, 1)',
       },
       {
         label: 'Metals',
         data: sortedData.map(item => item.metal),
-        backgroundColor: 'rgba(255, 159, 64, 0.6)',
+        backgroundColor: 'rgba(70, 79, 80, 0.5)',
       },
     ],
   };

@@ -29,12 +29,12 @@ const Login = () => {
     } else {
       console.log('Login successful');
       navigate('/menu'); // Navigate to the dashboard
-    }
+    } 
   };
 
   return (
     <div className="login-container">
-      <h1 className="login-heading">Automated Robotic Sorting System</h1>
+      {/* <h1 className="login-heading">Automated Robotic Sorting System</h1> */}
       <div className="login">
         <input 
           type="email" 

@@ -44,23 +44,14 @@ const Paper = () => {
         <h2>Simulation Recording</h2>
         {isStreaming ? (
           <div className="video">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ" // Placeholder for live stream
-              title="Live Stream"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+<iframe width="800" height="600" src="https://www.youtube.com/embed/X5wXqER-7SA?si=PyPtDN7FKiHbdIwl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
         ) : (
           <p>No stream currently running.</p>
         )}
 
         <div className="paper-recording-controls">
-          <button onClick={handleStartStream}>Start Sorting</button>
-          <button onClick={handleStopStream}>Stop Sorting</button>
+          <button onClick={handleStartStream}>Start Recording</button>
+          <button onClick={handleStopStream}>Stop Recording</button>
         </div>
       </div>
 
@@ -79,7 +70,7 @@ const Paper = () => {
 
       {/* Navigation Buttons */}
       <div className="paper-nav">
-        <Link to="/menu">
+        <Link to="/menu" className="paper-nav a">
           <button>Back to Menu</button>
         </Link>
       </div>
