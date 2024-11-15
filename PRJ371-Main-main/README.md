@@ -1,4 +1,4 @@
-# ![ARWSS Logo](ARWSS_Logo_1-removebg-preview%20(1).png)
+# ![ARWSS](ARWSS_Logo_1-removebg-preview%20(1).png)
 
 ## Table of Contents
 1. [Activate the Environment](#1-activate-the-environment)
