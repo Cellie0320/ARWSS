@@ -1,5 +1,4 @@
-# ![ARWSS](ARWSS_Logo_1-removebg-preview%20(1).png)
-
+# ARWSS
 ## Table of Contents
 1. [Activate the Environment](#1-activate-the-environment)
 2. [Start the Front-end](#2-start-the-front-end)
