@@ -47,7 +47,7 @@ const Plastic = () => {
         <h2>Simulation Recording</h2>
         {isStreaming ? (
           <div className="video">
-<iframe width="800" height="600" src="https://www.youtube.com/embed/X5wXqER-7SA?si=PyPtDN7FKiHbdIwl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          </div>
+<iframe width="700" height="500" src="https://www.youtube.com/embed/uRz0uT30dis?si=qkk481VSSpIqG8y0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       </div>
         ) : (
           <p>No stream currently running.</p>
         )}
