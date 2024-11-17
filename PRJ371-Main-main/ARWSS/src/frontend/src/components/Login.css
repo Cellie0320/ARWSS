@@ -8,12 +8,12 @@
 }
 
 .login {
-  background-color: rgba(111, 214, 111, 0.7); /* Overlay bright green */
+  /*background-color: rgba(255, 255, 255, 0.7); /* Overlay bright green */
   color: #000000;
   font-family: 'Arial', sans-serif;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
   width: 800px;
   text-align: center;
 }
