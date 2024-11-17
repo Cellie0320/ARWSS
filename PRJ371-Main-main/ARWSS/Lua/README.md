@@ -133,3 +133,7 @@ This project is licensed under the Apache License 2.0. See the [LICENSE](#file:L
 
 ## Acknowledgments
 - CoppeliaSim (formerly V-REP) development team
+-  Special thanks to Mechatronics Ninja for their insightful tutorials.
+   YouTube Channel: https://www.youtube.com/@mechatronicsninja3806
+   
+ 
