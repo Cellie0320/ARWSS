@@ -28,17 +28,11 @@ A robotic sorting system implemented using CoppeliaSim (formerly V-REP) and Lua 
 ```bash
 lua/
 ├── main.lua # Main control script
-├── display_dummy_position.lua # Position tracking
 ├── kr16_robot_arm.lua # Robot arm control 
 ├── baxter_vacuum_cup.lua # Gripper control
 ├── box_creation.lua # Object generation 
 ├── vision_sensor.lua # Vision processing
-├── proximity_sensor.lua # Proximity sensing 
-├── conveyor_system.lua # Conveyor control
-├── utils.lua # Utility functions
-├── config.lua # Configuration
-└── models/
-        └── conveyorSystem_customization-3.lua # Conveyor system
+
 ```
 
 ## Installation
