@@ -1,0 +1,73 @@
+.welcome-container {
+  display: flex; /* Align children horizontally */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 100vh;
+  background-color: #f0f0f0; /* Optional background color */
+  padding: 0 1rem; /* Add some padding to avoid content touching the edges */
+}
+
+.welcome-message-container {
+  display: flex; /* Align children horizontally */
+  flex-direction: row; /* Row layout for image and message */
+  align-items: center;
+  /*background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  padding: 2rem;
+  text-align: left; /* Align text to the left */
+  max-width: 100%; /* Ensure it doesn't overflow the container */
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+  box-shadow: none; /* Remove box shadow */
+}
+
+.welcome-logo {
+  width: 200px; /* Adjust size as needed */
+  max-width: 250px;
+  margin-right: 2rem; /* Space between image and text */
+}
+
+.welcome-text {
+  max-width: 500px; /* Ensure text doesn't expand too far */
+}
+
+.welcome-title {
+  font-size: 3rem; /* Increase font size */
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  animation: slideInLeft 1s ease-in-out; /* Slide-in effect */
+}
+
+.welcome-description {
+  font-size: 1.2rem;
+  color: #555555;
+  margin-bottom: 2rem;
+  font-family: 'Arial', sans-serif;
+  animation: slideInRight 1s ease-in-out; /* Slide-in effect */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -6,12 +6,15 @@ import Menu from './components/Menu';
 import Plastic from './components/Plastic';
 import Metal from './components/Metal';
 import Paper from './components/Paper';
+import Welcome from './components/Welcome';
+
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/" element={<Navigate to="/Welcome" />} />
+        <Route path="/welcome" element={<Welcome />} /> 
         <Route path="/login" element={<Login />} />
         <Route path="/menu" element={<Menu />} />
       
