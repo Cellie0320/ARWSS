@@ -5,7 +5,7 @@ This document provides a high-level overview of the system architecture for the 
 
 ## High-Level Design
 ### System Architecture Flowchart
-![System Architecture Flowchart](path/to/flowchart.png)
+![System Architecture Flowchart](https://github.com/Cellie0320/ARWSS/blob/main/PRJ371-Main-main/ARWSS/docs/architecture/system_arc%20pic.png)
 
 ### Description
 - **Central Block (Pink)**: **Sensor Information Handling** - This is the core of the system, processing data from various sensors.
