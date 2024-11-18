@@ -19,6 +19,7 @@
   font-size: 2em;
   font-family: "Lucida Console", "Courier New", monospace;
   margin: 0;
+  margin-top: 1rem; /* Add margin-top to push the heading to the top */
   color: #fff;
   padding-bottom: 1rem;
   overflow: hidden; /* Ensures the text is hidden until the animation completes */
@@ -29,33 +30,33 @@
 .metal-recording {
   background-color: #ffffff; /* White background for components */
   border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Padding inside the component */
+  padding: 10px; /* Reduce padding inside the component */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
   margin-bottom: 20px; /* Space between components */
   color: #000000;
-  width: 100%;
+  width: 80%; /* Reduce width */
 }
 
 .metal-recording h2 {
   color: #000000;
-  font-size: 3em;
+  font-size: 2em; /* Reduce font size */
 }
 
 .metal-recording p {
-  font-size: 2em;
+  font-size: 1.5em; /* Reduce font size */
   color: #000000; 
 }
 
 .metal-recording-controls {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px; /* Reduce gap between buttons */
 }
 
 .metal-recording-controls button {
-  width: 150px;
-  height: 50px;
-  border-radius: 30px;
+  width: 120px; /* Reduce button width */
+  height: 40px; /* Reduce button height */
+  border-radius: 20px; /* Adjust border radius */
   border: none;
   background-color: #4b5053;
   color: #ffffff;
@@ -66,7 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem; /* Reduce font size */
   font-family: "Lucida Console", "Courier New", monospace;
 }
 

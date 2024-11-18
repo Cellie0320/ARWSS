@@ -4,8 +4,8 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  width: 90%;
-  height: 80vh; /* Adjust height to fit within the viewport */
+  width: 95%;
+  height: 100vh; /* Adjust height to fit within the viewport */
   margin: 5vh auto; /* Adjust margin to fit within the viewport */
   text-align: center;
   transition: background-color 0.3s ease;

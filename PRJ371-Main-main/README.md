@@ -1,3 +1,4 @@
+# ARWSS
 ## Table of Contents
 1. [Activate the Environment](#1-activate-the-environment)
 2. [Start the Front-end](#2-start-the-front-end)
@@ -47,16 +48,39 @@ In the CoppeliaSim, press the start button to activate the simulation environmen
     ```
 
 ### 5.2 Install Node.js and React
-1. Download and install Node.js from [nodejs.org](https://nodejs.org/).
-2. Navigate to the `src/frontend` directory:
+1. Install fnm (Fast Node Manager):
+    ```sh
+    winget install Schniz.fnm
+    ```
+2. Configure fnm environment:
+    ```sh
+    fnm env --use-on-cd | Out-String | Invoke-Expression
+    ```
+3. Download and install Node.js:
+    ```sh
+    fnm use --install-if-missing 22
+    ```
+4. Verify the Node.js version:
+    ```sh
+    node -v # should print `v22.11.0`
+    ```
+5. Verify the npm version:
+    ```sh
+    npm -v # should print `10.9.0`
+    ```
+6. Navigate to the `src/frontend` directory:
     ```sh
     cd src/frontend
     ```
-3. Install the Node.js dependencies:
+7. Install React and React DOM:
+    ```sh
+    npm install react react-dom
+    ```
+8. Install the Node.js dependencies:
     ```sh
     npm install
     ```
-4. Start the React application:
+9. Start the React application:
     ```sh
     npm start
     ```
@@ -90,19 +114,3 @@ In the CoppeliaSim, press the start button to activate the simulation environmen
 
 ### 5.6 Additional Configuration
 - Refer to the [user manual](ARWSS/docs/user_manual/user_manual.md) for detailed operating instructions.
-
-## mechatronics Ninja as acknowledgement
---[[
-   Automated Robotic Waste Sorting Script
-
-   Description:
-   This script controls the robotic waste sorting system in CoppeliaSim.
-   It utilizes sensors to detect materials and directs the robot arm
-   to place them in designated bins.
-
-   Acknowledgements:
-   Special thanks to Mechatronics Ninja for their insightful tutorials.
-   YouTube Channel: https://www.youtube.com/@mechatronicsninja3806
-
-   
-]]
