@@ -29,7 +29,7 @@ To get started with the frontend, follow these steps:
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project frontend directory, you can run:
 
 ### `npm start`
 
