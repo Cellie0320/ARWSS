@@ -112,7 +112,7 @@ In CoppeliaSim, press the "Start Simulation" button located in the top toolbar t
 ## Future Considerations
 Docker will be considered for deployment when the application is ready.
 
-##License
-Navigate to the License file to see License information:
+## License
+Navigate to the License file to see License information for this project:
 https://github.com/Cellie0320/ARWSS/blob/3d68754e8e2396d7d5aaa947e9e83052917ec3f0/LICENSE
 
