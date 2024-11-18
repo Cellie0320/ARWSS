@@ -112,7 +112,44 @@ In CoppeliaSim, press the "Start Simulation" button located in the top toolbar t
 ## Future Considerations
 Docker will be considered for deployment when the application is ready.
 
+## Troubleshooting
+
+### Common Issues
+
+#### Environment activation issues:
+- Ensure you are using the correct command for your operating system.
+- Verify that the virtual environment was created successfully.
+
+#### Front-end not starting:
+- Ensure all dependencies are installed by running `npm install`.
+- Check for any errors in the terminal and resolve them.
+
+#### Backend not starting:
+- Ensure all dependencies are installed by running `pip install -r requirements.txt`.
+- Check if the required environment variables are set correctly in the `.env` file.
+
+#### Simulation not starting:
+- Ensure CoppeliaSim is installed and the Lua scripts are correctly placed.
+- Verify that the simulation file is correctly loaded in CoppeliaSim.
+
+### Frequently Asked Questions (FAQ)
+
+#### How do I change the default port for the backend server?
+You can change the port by modifying the `main.py` file to use a different port number.
+
+#### How do I add new API endpoints?
+Define the new endpoint in `main.py` and add the corresponding logic.
+
+#### How do I update dependencies?
+- For Python dependencies, update the `requirements.txt` file and run `pip install -r requirements.txt` again.
+- For Node.js dependencies, use `npm install <package-name>` to add new dependencies and update the `package.json` file.
+
+#### How do I deploy the frontend to a production server?
+Run `npm run build` to create a production build and deploy the contents of the `build` folder to your server.
+
+#### How do I connect the simulation to the backend?
+Ensure the Flask server is running and use the `socket.http` module in Lua to make HTTP requests to the backend.
+
 ## License
 License information found about the project in the link below:
 https://github.com/Cellie0320/ARWSS/blob/3d68754e8e2396d7d5aaa947e9e83052917ec3f0/LICENSE
-

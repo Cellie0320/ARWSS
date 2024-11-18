@@ -63,3 +63,55 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Development server not starting:**
+    - Ensure all dependencies are installed by running `npm install`.
+    - Check for any errors in the terminal and resolve them.
+    - Ensure you are in the correct directory (`src/frontend`) when running `npm start`.
+
+2. **Application not loading in the browser:**
+    - Ensure the development server is running and accessible at `http://localhost:3000`.
+    - Clear the browser cache and try again.
+    - Check for any console errors in the browser's developer tools.
+
+3. **Build errors:**
+    - Check the console for error messages and resolve any issues.
+    - Ensure all required files are present and correctly referenced.
+    - Verify that your Node.js and npm versions are compatible with the project requirements.
+
+4. **Styling issues:**
+    - Ensure all CSS files are correctly imported.
+    - Check for any conflicting styles or missing class names.
+
+## Frequently Asked Questions (FAQ)
+
+1. **How do I change the default port for the development server?**
+    - You can change the port by setting the `PORT` environment variable before running `npm start`. For example:
+      ```sh
+      PORT=4000 npm start
+      ```
+
+2. **How do I add new dependencies?**
+    - Use `npm install <package-name>` to add new dependencies and update the `package.json` file. For example:
+      ```sh
+      npm install axios
+      ```
+
+3. **How do I deploy the frontend to a production server?**
+    - Run `npm run build` to create a production build and deploy the contents of the `build` folder to your server. You can use services like Netlify, Vercel, or any other static site hosting provider.
+
+4. **How do I run tests?**
+    - Use `npm test` to launch the test runner in the interactive watch mode. Ensure you have written tests in the `src` directory.
+
+5. **How do I configure environment variables?**
+    - Create a `.env` file in the root of your project and add your environment variables. For example:
+      ```sh
+      REACT_APP_API_URL=http://localhost:5000
+      ```
+
+6. **How do I handle API requests?**
+    - Use a library like `axios` or the built-in `fetch` API to make HTTP requests to your backend. Ensure the backend server is running and accessible.

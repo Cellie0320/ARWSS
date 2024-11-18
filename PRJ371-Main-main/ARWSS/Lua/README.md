@@ -19,6 +19,7 @@ A robotic sorting system implemented using CoppeliaSim (formerly V-REP) and Lua 
     - IK (Inverse Kinematics) module
     - Vision sensor module
     - Proximity sensor module
+
 ## Visual Studio Code Extensions
 
 - Install the **Lua** extension by sumneko
@@ -32,7 +33,6 @@ lua/
 ├── baxter_vacuum_cup.lua # Gripper control
 ├── box_creation.lua # Object generation 
 ├── vision_sensor.lua # Vision processing
-
 ```
 
 ## Installation
@@ -104,8 +104,10 @@ return {
     | start_vision_inspection  | Integer | Triggers vision processing            |
     | inspected_color          | Integer | Result of color inspection            |
     ```
+## Contact
+- For support or questions, contact info to be provided in due course
 
-## Troubleshooting
+# Troubleshooting
 
 ### Common issues and solutions:
 
@@ -123,17 +125,29 @@ return {
     - Verify lighting conditions
     - Check vision sensor resolution settings
     - Ensure proper object materials are set
+## Frequently Asked Questions (FAQ)
 
-## License
+### How do I change the speed of the conveyor belt?
 
-This project is licensed under the Apache License 2.0. See the [LICENSE](#file:LICENSE.md-context) file for details.
+You can change the speed by modifying the CONVEYOR_SPEED parameter in the config.lua file.
 
-## Contact
-- For support or questions, contact info to be provided in due course
+### How do I add new object types for sorting?
+
+Update the box_creation.lua script to include the new object types and modify the vision processing logic in vision_sensor.lua to detect the new materials.
+
+### How do I debug Lua scripts in Visual Studio Code?
+
+Install the Lua Debug extension by actboy168 and configure the launch.json file to set up debugging for your Lua scripts.
+
+### How do I handle multiple objects on the conveyor belt?
+
+Ensure the proximity sensor logic in main.lua can handle multiple detections and update the sorting logic accordingly.
+
+### How do I improve the accuracy of the vision sensor?
+
+Adjust the resolution and lighting settings of the vision sensor in CoppeliaSim and fine-tune the image processing algorithms in vision_sensor.lua.
 
 ## Acknowledgments
 - CoppeliaSim (formerly V-REP) development team
--  Special thanks to Mechatronics Ninja for their insightful tutorials.
-   YouTube Channel: https://www.youtube.com/@mechatronicsninja3806
-   
- 
+- Special thanks to Mechatronics Ninja for their insightful tutorials.
+  YouTube Channel: https://www.youtube.com/@mechatronicsninja3806
