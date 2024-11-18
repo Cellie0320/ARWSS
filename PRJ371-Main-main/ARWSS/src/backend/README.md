@@ -23,13 +23,18 @@ Before running the backend, ensure you have the following installed:
     ```sh
     cd PRJ371-Main-main/ARWSS/src/backend
     ```
+2. Create and activate the virtual environment:
+    ```sh
+    python -m venv venv
+    venv\Scripts\activate
+    ```
 
-2. Install dependencies:
+3. Install dependencies:
     ```sh
     pip install -r requirements.txt
     ```
 
-3. Set up environment variables:
+4. Set up environment variables:
     - Create a `.env` file in the `ARWSS` directory and add the necessary environment variables. Refer to the `.env.example` file for the required variables.
 
 ## Running the Backend

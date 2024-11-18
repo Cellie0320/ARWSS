@@ -7,7 +7,9 @@
 5. [Installation Guide](#5-installation-guide)
 
 ## 1. Activate the Environment
-
+```sh
+venv\Scripts\activate
+```
 ## 2. Start the Front-end
 In the frontend directory, you can run:
 ```sh
@@ -26,7 +28,12 @@ In CoppeliaSim, press the "Start Simulation" button located in the top toolbar t
 - Node.js and npm
 - CoppeliaSim (Version 4.7.0 or higher)
 
-### 5.1 Install Python and Virtual Environment
+### 5.1 Clone the Repository
+```sh
+git clone https://github.com/Cellie0320/ARWSS
+cd ARWSS
+```
+### 5.2 Install Python and Virtual Environment
 1. Download and install Python from [python.org](https://www.python.org/downloads/).
 2. Create a virtual environment in the project directory:
     ```sh
@@ -46,7 +53,7 @@ In CoppeliaSim, press the "Start Simulation" button located in the top toolbar t
     pip install -r requirements.txt
     ```
 
-### 5.2 Install Node.js and React
+### 5.3 Install Node.js and React
 1. Install fnm (Fast Node Manager):
     ```sh
     winget install Schniz.fnm
@@ -84,7 +91,7 @@ In CoppeliaSim, press the "Start Simulation" button located in the top toolbar t
     npm start
     ```
 
-### 5.3 Install CoppeliaSim
+### 5.4 Install CoppeliaSim
 1. Download and install CoppeliaSim EDU from [coppeliarobotics.com](https://www.coppeliarobotics.com/downloads).
 2. Copy the Lua scripts to the `lua` folder in your CoppeliaSim installation directory. The Lua scripts are located in the [Lua folder directory](ARWSS/Lua).
     ```
