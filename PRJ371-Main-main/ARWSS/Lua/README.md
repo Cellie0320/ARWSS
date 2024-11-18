@@ -37,15 +37,11 @@ lua/
 
 ## Installation
 
-1. Clone this repository to your local machine:
-     ```bash
-     git clone [repository-url]
-     ```
-2. Copy the lua folder to your CoppeliaSim installation directory:
+1. Copy the lua folder to your CoppeliaSim installation directory:
      ```bash
      cp -r lua/ [CoppeliaSim-directory]/
      ```
-3. Load the scene file in CoppeliaSim:
+2. Load the scene file in CoppeliaSim:
      - Open CoppeliaSim
      - File → Open Scene
      - Navigate to and select the scene file
@@ -75,23 +71,6 @@ lua/
 4. Robot arm picks up the object using the vacuum gripper.
 5. Object is sorted into the appropriate bin based on material.
 6. Process repeats for new objects (if any).
-
-## Configuration
-
-### Adjust system parameters in config.lua:
-
-```lua
--- Example configuration
-return {
-        CONVEYOR_SPEED = 0.07,
-        MAX_PULL_FORCE = 3,
-        MAX_SHEAR_FORCE = 1,
-        MAX_PEEL_TORQUE = 0.1,
-        ROBOT_VELOCITY = 0.1,
-        ROBOT_ACCELERATION = 70,
-        ROBOT_JERK = 70
-}
-```
 
 ## Signal System
 

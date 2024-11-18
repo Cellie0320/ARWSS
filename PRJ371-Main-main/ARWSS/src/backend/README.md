@@ -19,11 +19,10 @@ Before running the backend, ensure you have the following installed:
 - [Python](https://www.python.org/)
 
 ## Setup
-1. Clone the repository:
+1. Navigate to the backend directory:
     ```sh
-    git clone https://github.com/Cellie0320/ARWSS
     cd PRJ371-Main-main/ARWSS/src/backend
-    cd ARWSS/src/backend
+    ```
 
 2. Install dependencies:
     ```sh

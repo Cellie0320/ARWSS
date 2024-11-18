@@ -17,7 +17,7 @@ This document provides guidelines for setting up the development environment and
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-repo/ARWSS.git
+git clone https://github.com/Cellie0320/ARWSS
 cd ARWSS
 ```
 
