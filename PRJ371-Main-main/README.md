@@ -113,6 +113,6 @@ In CoppeliaSim, press the "Start Simulation" button located in the top toolbar t
 Docker will be considered for deployment when the application is ready.
 
 ## License
-License information found about the project in the file below:
+License information found about the project in the link below:
 https://github.com/Cellie0320/ARWSS/blob/3d68754e8e2396d7d5aaa947e9e83052917ec3f0/LICENSE
 
