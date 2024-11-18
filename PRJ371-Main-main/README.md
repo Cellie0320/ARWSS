@@ -109,4 +109,6 @@ In CoppeliaSim, press the "Start Simulation" button located in the top toolbar t
 ### 5.6 Additional Configuration
 - Refer to the [user manual](ARWSS/docs/user_manual/user_manual.md) for detailed operating instructions.
 
+## Future Considerations
+Docker will be considered for deployment when the application is ready.
 
