@@ -15,6 +15,7 @@ In the frontend directory, you can run:
 ```sh
 npm start
 ```
+## 3. Start the Back-end
 In the backend directory, you can run:
 ```sh
 python main.py
