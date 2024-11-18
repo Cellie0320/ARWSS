@@ -49,8 +49,6 @@ You can use the [`api_requests.http`](./api_requests.http) file for testing the 
 ## API Documentation
 API documentation is available in the `docs/api/` directory. Refer to the documentation for details on the available endpoints and their usage.
 
-## Future Considerations
-Docker will be considered for deployment when the application is ready.
 
 ## License
 This project is licensed under the terms of the [`LICENSE.md`](./LICENSE.md) file.
