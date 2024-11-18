@@ -109,11 +109,4 @@ In CoppeliaSim, press the "Start Simulation" button located in the top toolbar t
 ### 5.6 Additional Configuration
 - Refer to the [user manual](ARWSS/docs/user_manual/user_manual.md) for detailed operating instructions.
 
-### Lua Scripts
-- [Group 5 simulation.ttt](Group%205%20simulation.ttt)
-- [main.lua](ARWSS/Lua/main.lua)
-- [baxter_vacuum_cup.lua](ARWSS/Lua/baxter_vacuum_cup.lua)
-- [box_creation.lua](ARWSS/Lua/box_creation.lua)
-- [kr16_robot_arm.lua](ARWSS/Lua/kr16_robot_arm.lua)
-- [vision_sensor.lua](ARWSS/Lua/vision_sensor.lua)
 
