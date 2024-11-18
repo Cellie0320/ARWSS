@@ -1,4 +1,4 @@
-# Robotic Sorting System with CoppeliaSim
+# Automated Robotic Waste Sorting System with CoppeliaSim
 
 A robotic sorting system implemented using CoppeliaSim (formerly V-REP) and Lua scripts. The system uses a KR16 robot arm, vision sensors, and a conveyor belt to sort objects based on their material type (plastic, metal, paper).
 

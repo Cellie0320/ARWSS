@@ -1,4 +1,4 @@
-# ARWSS
+# Automated Robotic Waste Sorting System (ARWSS)
 ## Table of Contents
 1. [Activate the Environment](#1-activate-the-environment)
 2. [Start the Front-end](#2-start-the-front-end)
@@ -7,19 +7,18 @@
 5. [Installation Guide](#5-installation-guide)
 
 ## 1. Activate the Environment
-### `.venv\Scripts\activate`
 
 ## 2. Start the Front-end
-In the project directory, you can run:
-### `npm start`
-
-## 3. Activate Flask
-In the project directory, you can run:
-### `python main.py`
-
+In the frontend directory, you can run:
+```sh
+npm start
+```
+In the backend directory, you can run:
+```sh
+python main.py
+```
 ## 4. Start the Simulation
-In the CoppeliaSim, press the start button to activate the simulation environment.
-
+In CoppeliaSim, press the "Start Simulation" button located in the top toolbar to activate the simulation environment.
 ## 5. Installation Guide
 
 ### Prerequisites
@@ -62,11 +61,11 @@ In the CoppeliaSim, press the start button to activate the simulation environmen
     ```
 4. Verify the Node.js version:
     ```sh
-    node -v # should print `v22.11.0`
+    node -v # should print `v22.0.0`
     ```
 5. Verify the npm version:
     ```sh
-    npm -v # should print `10.9.0`
+    npm -v # should print `10.1.0`
     ```
 6. Navigate to the `src/frontend` directory:
     ```sh
@@ -87,18 +86,13 @@ In the CoppeliaSim, press the start button to activate the simulation environmen
 
 ### 5.3 Install CoppeliaSim
 1. Download and install CoppeliaSim EDU from [coppeliarobotics.com](https://www.coppeliarobotics.com/downloads).
-2. Copy the Lua scripts to your CoppeliaSim installation directory:
-    ```sh
-    cp -r Lua/ [CoppeliaSim-directory]/
+2. Copy the Lua scripts to the `lua` folder in your CoppeliaSim installation directory. The Lua scripts are located in the [Lua folder directory](ARWSS/Lua).
     ```
-3. Load the scene file in CoppeliaSim:
     - Open CoppeliaSim
-    - File → Open Scene
-    - Navigate to and select the scene file `Group 5 simulation.ttt`
-
-### 5.4 Start the Simulation
-1. Open CoppeliaSim.
-2. Load the project scene.
+        - File → Open Scene
+        - Navigate to the `ARWSS` directory and open the file `Group 5 simulation.ttt` in CoppeliaSim:
+            - File → Open Scene
+            - Select `Group 5 simulation.ttt`
 3. Click the Start Simulation button or press `Ctrl+P`.
 
 ### 5.5 Connecting the Simulation to the Backend
@@ -114,3 +108,12 @@ In the CoppeliaSim, press the start button to activate the simulation environmen
 
 ### 5.6 Additional Configuration
 - Refer to the [user manual](ARWSS/docs/user_manual/user_manual.md) for detailed operating instructions.
+
+### Lua Scripts
+- [Group 5 simulation.ttt](Group%205%20simulation.ttt)
+- [main.lua](ARWSS/Lua/main.lua)
+- [baxter_vacuum_cup.lua](ARWSS/Lua/baxter_vacuum_cup.lua)
+- [box_creation.lua](ARWSS/Lua/box_creation.lua)
+- [kr16_robot_arm.lua](ARWSS/Lua/kr16_robot_arm.lua)
+- [vision_sensor.lua](ARWSS/Lua/vision_sensor.lua)
+
