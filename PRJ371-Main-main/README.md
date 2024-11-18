@@ -90,3 +90,19 @@ In the CoppeliaSim, press the start button to activate the simulation environmen
 
 ### 5.6 Additional Configuration
 - Refer to the [user manual](ARWSS/docs/user_manual/user_manual.md) for detailed operating instructions.
+
+## mechatronics Ninja as acknowledgement
+--[[
+   Automated Robotic Waste Sorting Script
+
+   Description:
+   This script controls the robotic waste sorting system in CoppeliaSim.
+   It utilizes sensors to detect materials and directs the robot arm
+   to place them in designated bins.
+
+   Acknowledgements:
+   Special thanks to Mechatronics Ninja for their insightful tutorials.
+   YouTube Channel: https://www.youtube.com/@mechatronicsninja3806
+
+   
+]]
