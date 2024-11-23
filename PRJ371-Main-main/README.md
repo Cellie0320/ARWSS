@@ -1,40 +1,29 @@
 # Automated Robotic Waste Sorting System (ARWSS)
-## Table of Contents
-1. [Activate the Environment](#1-activate-the-environment)
-2. [Start the Front-end](#2-start-the-front-end)
-3. [Activate Flask](#3-activate-flask)
-4. [Start the Simulation](#4-start-the-simulation)
-5. [Installation Guide](#5-installation-guide)
 
-## 1. Activate the Environment
-```sh
-venv\Scripts\activate
-```
-## 2. Start the Front-end
-In the frontend directory, you can run:
-```sh
-npm start
-```
-## 3. Start the Back-end
-In the backend directory, you can run:
-```sh
-python main.py
-```
-## 4. Start the Simulation
-In CoppeliaSim, press the "Start Simulation" button located in the top toolbar to activate the simulation environment.
-## 5. Installation Guide
+## Table of Contents
+1. [Installation Guide](#1-installation-guide)
+2. [Activate the Environment](#2-activate-the-environment)
+3. [Start the Front-end](#3-start-the-front-end)
+4. [Start the Back-end](#4-start-the-back-end)
+5. [Start the Simulation](#5-start-the-simulation)
+6. Troubleshooting
+7. [Frequently Asked Questions (FAQ)](#7-frequently-asked-questions-faq)
+8. License
+
+## 1. Installation Guide
 
 ### Prerequisites
 - Python 3.x
 - Node.js and npm
 - CoppeliaSim (Version 4.7.0 or higher)
 
-### 5.1 Clone the Repository
+### 1.1 Clone the Repository
 ```sh
 git clone https://github.com/Cellie0320/ARWSS
 cd ARWSS
 ```
-### 5.2 Install Python and Virtual Environment
+
+### 1.2 Install Python and Virtual Environment
 1. Download and install Python from [python.org](https://www.python.org/downloads/).
 2. Create a virtual environment in the project directory:
     ```sh
@@ -54,7 +43,7 @@ cd ARWSS
     pip install -r requirements.txt
     ```
 
-### 5.3 Install Node.js and React
+### 1.3 Install Node.js and React
 1. Install fnm (Fast Node Manager):
     ```sh
     winget install Schniz.fnm
@@ -92,7 +81,7 @@ cd ARWSS
     npm start
     ```
 
-### 5.4 Install CoppeliaSim
+### 1.4 Install CoppeliaSim
 1. Download and install CoppeliaSim EDU from [coppeliarobotics.com](https://www.coppeliarobotics.com/downloads).
 2. Copy the Lua scripts to the `lua` folder in your CoppeliaSim installation directory. The Lua scripts are located in the [Lua folder directory](ARWSS/Lua).
     ```
@@ -103,7 +92,7 @@ cd ARWSS
             - Select `Group 5 simulation.ttt`
 3. Click the Start Simulation button or press `Ctrl+P`.
 
-### 5.5 Connecting the Simulation to the Backend
+### 1.5 Connecting the Simulation to the Backend
 1. Ensure the Flask server is running:
     ```sh
     python main.py
@@ -114,13 +103,30 @@ cd ARWSS
     local ltn12 = require("ltn12")
     ```
 
-### 5.6 Additional Configuration
+### 1.6 Additional Configuration
 - Refer to the [user manual](ARWSS/docs/user_manual/user_manual.md) for detailed operating instructions.
 
-## Future Considerations
-Docker will be considered for deployment when the application is ready.
+## 2. Activate the Environment
+```sh
+venv\Scripts\activate
+```
 
-## Troubleshooting
+## 3. Start the Front-end
+In the frontend directory, you can run:
+```sh
+npm start
+```
+
+## 4. Start the Back-end
+In the backend directory, you can run:
+```sh
+python main.py
+```
+
+## 5. Start the Simulation
+In CoppeliaSim, press the "Start Simulation" button located in the top toolbar to activate the simulation environment.
+
+## 6. Troubleshooting
 
 ### Common Issues
 
@@ -140,7 +146,7 @@ Docker will be considered for deployment when the application is ready.
 - Ensure CoppeliaSim is installed and the Lua scripts are correctly placed.
 - Verify that the simulation file is correctly loaded in CoppeliaSim.
 
-### Frequently Asked Questions (FAQ)
+## 7. Frequently Asked Questions (FAQ)
 
 #### How do I change the default port for the backend server?
 You can change the port by modifying the `main.py` file to use a different port number.
@@ -158,6 +164,6 @@ Run `npm run build` to create a production build and deploy the contents of the 
 #### How do I connect the simulation to the backend?
 Ensure the Flask server is running and use the `socket.http` module in Lua to make HTTP requests to the backend.
 
-## License
+## 8. License
 License information found about the project in the link below:
 https://github.com/Cellie0320/ARWSS/blob/3d68754e8e2396d7d5aaa947e9e83052917ec3f0/LICENSE
