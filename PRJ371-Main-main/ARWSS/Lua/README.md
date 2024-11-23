@@ -84,7 +84,8 @@ lua/
     | inspected_color          | Integer | Result of color inspection            |
     ```
 ## Contact
-- For support or questions, contact info to be provided in due course
+- For support or questions, 
+note : contact info to be provided in due course
 
 # Troubleshooting
 
