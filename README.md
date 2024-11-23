@@ -1,4 +1,5 @@
-# Automated Robotic Waste Sorting System (ARWSS) <p align="center">
+# Automated Robotic Waste Sorting System (ARWSS) 
+<p align="center">
   <img src="./PRJ371-Main-main/ARWSS/src/frontend/src/ARWSS_Logo.webp" alt="ARWSS Logo" width="200">
 </p>
 
