@@ -86,7 +86,7 @@ cd ARWSS
     ```
 
 ### 1.4 Install CoppeliaSim
-1. Download and install CoppeliaSim EDU from [coppeliarobotics.com](https://www.coppeliarobotics.com/downloads).
+1. Download and install CoppeliaSim EDU from [coppeliarobotics.com](https://www.coppeliarobotics.com/downloads). Note that the EDU version is for educational use only. For commercial use, consider using the Player or Pro version.
 2. Copy the Lua scripts to the `lua` folder in your CoppeliaSim installation directory. The Lua scripts are located in the [Lua folder directory](./PRJ371-Main-main/ARWSS/Lua).
     ```
     - Open CoppeliaSim
