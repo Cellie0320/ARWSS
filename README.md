@@ -171,3 +171,7 @@ Ensure the Flask server is running and use the `socket.http` module in Lua to ma
 ## 8. License
 License information found about the project in the link below:
 https://github.com/Cellie0320/ARWSS/blob/3d68754e8e2396d7d5aaa947e9e83052917ec3f0/LICENSE
+
+## Note: Use the following details to gain access to the system( for now it will be updated in the near future):
+Username: Marcel
+Password: marcel
