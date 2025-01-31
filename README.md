@@ -175,3 +175,10 @@ https://github.com/Cellie0320/ARWSS/blob/3d68754e8e2396d7d5aaa947e9e83052917ec3f
 ## 9. Login Credentials (for now to be updated in the near future):
 - Username: Marcel
 - Password: marcel
+## 10. Project Group Member
+-Maryna Joubert
+-Mia Van Staden
+-Marcel De Lange
+-Mbuti Lwazi
+-Lehlonolo Mokoena
+-Lesedi Mapokane
