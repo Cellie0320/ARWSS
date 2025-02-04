@@ -13,6 +13,8 @@
 6. [Troubleshooting](#6-troubleshooting)
 7. [Frequently Asked Questions (FAQ)](#7-frequently-asked-questions-faq)
 8. [License](#8-license)
+9. [Login Credentials](#9-login-credentials-for-now-to-be-updated-in-the-near-future)
+10. [Project Group Members](#10-project-group-members)
 
 ## 1. Installation Guide
 
@@ -175,7 +177,8 @@ https://github.com/Cellie0320/ARWSS/blob/3d68754e8e2396d7d5aaa947e9e83052917ec3f
 ## 9. Login Credentials (for now to be updated in the near future):
 - Username: Marcel
 - Password: marcel
-## 10. Project Group Members
+
+## 10. Project Group Members :
 -Maryna Joubert
 -Mia Van Staden
 -Marcel De Lange ( Team Lead)
