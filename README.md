@@ -180,8 +180,13 @@ https://github.com/Cellie0320/ARWSS/blob/3d68754e8e2396d7d5aaa947e9e83052917ec3f
 
 ## 10. Project Group Members :
 -Maryna Joubert
+
 -Mia Van Staden
+
 -Marcel De Lange ( Team Lead)
+
 -Mbuti Nduweni
+
 -Lehlonolo Mokoena
+
 -Lesedi Mapokane
