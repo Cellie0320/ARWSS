@@ -14,7 +14,7 @@
 7. [Frequently Asked Questions (FAQ)](#7-frequently-asked-questions-faq)
 8. [License](#8-license)
 9. [Login Credentials](#9-login-credentials-for-now-to-be-updated-in-the-near-future)
-10. [Project Group Members](#10-project-group-members)
+10. [Project Group Members](#10-project-group-members-)
 
 ## 1. Installation Guide
 
