@@ -10,9 +10,9 @@
 3. [Start the Front-end](#3-start-the-front-end)
 4. [Start the Back-end](#4-start-the-back-end)
 5. [Start the Simulation](#5-start-the-simulation)
-6. Troubleshooting
+6. [Troubleshooting](#6-troubleshooting)
 7. [Frequently Asked Questions (FAQ)](#7-frequently-asked-questions-faq)
-8. License
+8. [License](#8-license)
 
 ## 1. Installation Guide
 
